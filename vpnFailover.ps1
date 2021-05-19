@@ -1,18 +1,3 @@
-#-------------------------------------------------------------------------
-#
-# Copyright (c) Microsoft.  All rights reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#   http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 #--------------------------------------------------------------------------
 #
 # High Availability (HA) Network Virtual Appliance (NVA) Failover Function
@@ -50,8 +35,8 @@ Write-Output -InputObject "HA NVA timer trigger function executed at:$(Get-Date)
 
 $VMFW1Name = $env:FW1NAME      # Set the Name of the primary NVA firewall
 $VMFW2Name = $env:FW2NAME      # Set the Name of the secondary NVA firewall
-$FW1RGName = $env:FWRGNAME     # Set the ResourceGroup that contains FW1
-$FW2RGName = $env:FWRGNAME     # Set the ResourceGroup that contains FW2
+$FW1RGName = $env:FW1RGNAME     # Set the ResourceGroup that contains FW1
+$FW2RGName = $env:FW2RGNAME     # Set the ResourceGroup that contains FW2
 $Monitor = $env:FWMONITOR      # "VMStatus" or "TCPPort" are valid values
 
 #--------------------------------------------------------------------------
